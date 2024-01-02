@@ -1,0 +1,22 @@
+@mixin root-variables {
+  --bg-charcoal: #2d2d2d;
+  --bg-bridge: #ebece8;
+  --bg-white: #fff;
+
+  --radius: 0.25rem;
+  --shadow-elevation: 0px 16px 16px -16px rgb(0 0 0 / 35%);
+  --opacity-disabled: 0.6;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', helvetica, arial,
+  sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-title: 'MatterSQ', -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue',
+  helvetica, arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-mono: ui-monospace, 'SFMono-Regular', 'SF Mono', 'Menlo', 'Consolas', 'Liberation Mono', monospace;
+
+  --blue: #597dce;
+  --purple: #c278cf;
+  --green: var(--success);
+  --black: var(--default);
+
+}
