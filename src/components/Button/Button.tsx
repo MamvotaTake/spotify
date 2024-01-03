@@ -1,4 +1,6 @@
 import React from "react";
+import clsx from "clsx";
+import './Button.scss';
 
 export interface ButtonBaseProps extends Pick<React.ButtonHTMLAttributes<HTMLElement>,
     | 'title'
@@ -16,7 +18,7 @@ export interface ButtonBaseProps extends Pick<React.ButtonHTMLAttributes<HTMLEle
     children?: React.ReactNode
     className?: string
     disabled?: boolean
-    type?: 'button' | 'submit' | 'reset'
+    type?: 'primary' | 'secondary' | 'tertiary'
     status?: 'default' | 'success' | 'error'
     size?: 'xsmall' | 'small' | 'medium' | 'large'
     icon?: React.ReactElement | null
@@ -79,6 +81,26 @@ export const Button: React.FunctionComponent<ButtonBaseProps & React.RefAttribut
          },
          ref): JSX.Element => {
         return (
-            <div>{children}</div>
+            <button
+                ref={ref as any}
+                className={clsx(
+                    'Button',
+                    `Button--${type}`,
+                    `Button--${size}`,
+                    `Button--${status}`,
+                    fullWidth && 'Button--full-width',
+                    !children && 'Button--no-content',
+                    !!icon && `Button--has-icon`,
+                    !!sideIcon && `Button--has-side-icon`,
+                    truncate && 'Button--truncate',
+                    className
+                )}
+            >
+                <span className='Button'>
+                    {icon ? <span className="Button__icon">{icon}</span> : null}
+                    {children ? <span className="Button__text">{children}</span> : null}
+                    {sideIcon ? <span className="Button__sideIcon">{sideIcon}</span> : null}
+                </span>
+            </button>
         )
     })
