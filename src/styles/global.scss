@@ -25,10 +25,20 @@ html {
 }
 
 body {
-  background-color: red;
   min-height: 100vh;
+  background-color: #121212;
 }
 
-
+.ButtonComponent{
+  width: fit-content;
+  display: flex;
+  border: 1px dotted #ccc;
+  padding: 3rem 3rem;
+  margin: 2rem;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  //background-color: #888888;
+  border-radius: 2.5rem;
+}
 
 
