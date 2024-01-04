@@ -52,10 +52,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.8125rem;
+    padding: 0.5rem;
     border-radius: 0.75rem;
     background: #212121;
     transition: all 0.3ms ease-in;
+    margin-right: 0.5rem;
 
     & svg{
       width: 1.5rem;
@@ -64,7 +65,7 @@
     }
 
     &:hover{
-      background-color: #212121;
+      background-color: #121212;
     }
   }
 
