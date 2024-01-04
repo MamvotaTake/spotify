@@ -58,6 +58,7 @@
     transition: all 0.3ms ease-in;
     margin-right: 0.5rem;
 
+
     & svg{
       width: 1.5rem;
       height: 1.5rem;
@@ -65,7 +66,9 @@
     }
 
     &:hover{
+
       background-color: #121212;
+
     }
   }
 

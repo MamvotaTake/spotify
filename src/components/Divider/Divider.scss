@@ -1,0 +1,40 @@
+.Divider {
+  flex-shrink: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--bg-bridge);
+
+  &--dashed {
+    background: repeating-linear-gradient(
+                    to right,
+                    var(--bg-charcoal),
+                    var(--bg-charcoal) 4px,
+                    transparent 4px,
+                    transparent 8px
+    );
+  }
+
+  &--thick {
+    height: 3px;
+  }
+
+  &--vertical {
+    align-self: stretch;
+    width: 1px;
+    height: auto;
+
+    &.Divider--thick {
+      width: 3px;
+    }
+
+    &.Divider--dashed {
+      background: repeating-linear-gradient(
+                      to bottom,
+                      var(--bg-charcoal),
+                      var(--bg-charcoal) 4px,
+                      transparent 4px,
+                      transparent 8px
+      );
+    }
+  }
+}
