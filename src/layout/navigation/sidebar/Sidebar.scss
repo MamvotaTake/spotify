@@ -1,18 +1,30 @@
 .Sidebar{
   background-color: #212121;
-  flex: 0 0 15%;
+  flex: 0 0 20%;
   padding: 1.7rem 1rem;
 
   &__Link{
     list-style: none;
     color: #FFF;
     font-size: 1rem;
+    margin-top: 1rem;
 
     &-title{
       font-size: .7rem;
       font-weight: 600;
       font-style: normal;
       line-height: normal;
+    }
+
+    &-library{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      & span {
+        display: flex;
+      }
+
     }
 
   }
