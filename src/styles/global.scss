@@ -21,12 +21,14 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; // 1rem = 10px
+  //font-size: 62.5%; // 1rem = 10px
 }
 
 body {
   min-height: 100vh;
   background-color: #121212;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 
 .ButtonComponent{
