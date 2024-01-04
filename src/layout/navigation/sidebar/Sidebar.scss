@@ -1,0 +1,70 @@
+.Sidebar{
+  background-color: #212121;
+  flex: 0 0 20%;
+  padding: 1.7rem 1rem;
+
+
+
+  &__Link{
+    list-style: none;
+    color: #FFF;
+    font-size: 1rem;
+    margin-top: 1rem;
+    position: relative;
+
+
+
+
+    &-title{
+      font-size: .7rem;
+      font-weight: 600;
+      font-style: normal;
+      line-height: normal;
+
+
+
+    }
+
+    &-library{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+
+
+      & span {
+        display: flex;
+
+
+      }
+
+    }
+
+
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 100%;
+      box-shadow: 0 .3rem 2rem 0 rgba(255, 255, 255, 0.2);
+      transform: scaleY(0);
+      transition: transform .2s,
+      width .4s cubic-bezier(1,0,0,1) .2s,
+      box-shadow .1s;
+      cursor: pointer;
+
+
+    }
+
+    &:hover:before{
+      transform: scaleY(1);
+      width: 100%;
+      border-radius: 3px;
+      padding: .2rem;
+    }
+
+  }
+
+}

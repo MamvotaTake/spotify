@@ -1,6 +1,4 @@
-import {Button} from "./components/Button";
-import {HiCheck} from "react-icons/hi";
-import {IoChevronForward, IoNotificationsSharp} from "react-icons/io5";
+import {Navigation} from "./layout/navigation/Navigation.tsx";
 
 
 
@@ -17,6 +15,7 @@ function App() {
 
   return (
     <>
+
 
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
@@ -38,6 +37,7 @@ function App() {
             <Button type='secondary'>
                 <span><HiCheck/></span>Following
             </Button>
+
         </div>
 
     </>
