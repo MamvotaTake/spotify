@@ -43,6 +43,8 @@
         color: #fff;
       }
     }
+
+
   }
 
 
@@ -53,16 +55,19 @@
     padding: 0.8125rem;
     border-radius: 0.75rem;
     background: #212121;
+    transition: all 0.3ms ease-in;
 
     & svg{
       width: 1.5rem;
       height: 1.5rem;
       color: #fff;
     }
+
+    &:hover{
+      background-color: #212121;
+    }
   }
 
-  &:hover{
-    transform: translateY(-1px);
-  }
+
 
 }
