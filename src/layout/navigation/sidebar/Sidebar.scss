@@ -29,4 +29,13 @@
 
   }
 
+  &__Cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: .7rem;
+    margin-top: .7rem;
+    //overflow-y: scroll;
+  }
+
 }
