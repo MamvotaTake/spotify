@@ -14,10 +14,34 @@
     gap: 1rem;
 
     &-Explore{
-      background: #FFFFFF;
       border-radius: .75rem;
       font-size: .75rem;
-      color: #121212;
+      padding: .5rem;
+      color: #000 !important;
+      background-color: #212121;
+      font-weight: 600;
+    }
+
+    &-Download{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: .5rem;
+      border-radius: .75rem;
+      background-color: #212121;
+      gap: 1rem;
+
+      & span{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: .3rem;
+
+          & svg{
+              width: 1.3rem;
+              height: 1.3rem;
+          }
+      }
     }
 
     & img {

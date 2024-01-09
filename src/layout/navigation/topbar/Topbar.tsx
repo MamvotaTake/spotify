@@ -12,8 +12,8 @@ export function Topbar() {
                 </div>
             </div>
             <div className="Topbar__Right">
-                <Button className="Topbar__Right-Explore">Explore Premium</Button>
-                <Button type="secondary">
+                <Button type="primary">Explore Premium</Button>
+                <Button className="Topbar__Right-Download">
                     <span>
                         <MdArrowCircleDown/>
                     </span>
