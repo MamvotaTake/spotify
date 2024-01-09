@@ -24,9 +24,9 @@ export function Footer() {
             <div className="Footer__Next">
                 <Button className="Footer__Song-Shuffle-Button"><LuMic2/></Button>
                 <Button className="Footer__Song-Prev-Button"><TbPlayerTrackPrev/></Button>
-                <figure>
-                    <audio controls src="/media/cc0-audio/t-rex-roar.mp3"></audio>
-                </figure>
+                {/*<figure>*/}
+                {/*    <audio controls src="/media/cc0-audio/t-rex-roar.mp3"></audio>*/}
+                {/*</figure>*/}
                 <Button className="Footer__Song-Next-Button"><TbPlayerTrackNext/></Button>
                 <Button className="Footer__Song-Repeat-Button"><TbRepeat/></Button>
             </div>
