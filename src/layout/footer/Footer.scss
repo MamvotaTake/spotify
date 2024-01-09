@@ -1,0 +1,65 @@
+.Footer{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  //background-color: #121212;
+  background: rgba(18, 18, 18, 0.64);
+  backdrop-filter: blur(3px);
+  padding: 1rem 1.5rem;
+  bottom: 0;
+  width: 100%;
+
+  &__Song-Name{
+    display: flex;
+
+
+    & img{
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: .75rem;
+      margin-right: 1rem;
+    }
+
+    & p{
+      display: flex;
+      flex-direction: column;
+      margin-right: 2rem;
+      gap: .5rem;
+
+      & span{
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 0.815rem;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+      }
+    }
+  }
+
+  &__Song-Play{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    &-Button{
+      border-radius: 50%;
+      background: linear-gradient(222deg, #FFF 12.65%, rgba(255, 255, 255, 0.00) 216.78%);
+      padding: 0.75rem;
+
+
+      & svg{
+        display: flex;
+        width: 1.5rem;
+        height: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+      }
+    }
+  }
+
+  &__Next{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}

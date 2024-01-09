@@ -2,6 +2,7 @@ import {Sidebar} from "./sidebar/Sidebar.tsx";
 import './Navigation.scss'
 import {Topbar} from "./topbar/Topbar.tsx";
 import {Profile} from "./profile/Profile.tsx";
+import {Footer} from "../footer/Footer.tsx";
 
 export function Navigation() {
     return (
@@ -15,6 +16,8 @@ export function Navigation() {
                     <Profile/>
                 </div>
             </div>
+            <Footer/>
+
         </>
     );
 }

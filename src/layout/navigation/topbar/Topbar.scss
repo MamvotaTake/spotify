@@ -1,3 +1,29 @@
 .Topbar{
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__Buttons{
+    display: flex;
+    gap: .7rem;
+  }
+
+  &__Right{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &-Explore{
+      background: #FFFFFF;
+      border-radius: .75rem;
+      font-size: .75rem;
+      color: #121212;
+    }
+
+    & img {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+    }
+  }
 }
