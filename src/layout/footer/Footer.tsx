@@ -1,7 +1,7 @@
 import './Footer.scss';
 import {Button} from "../../components/Button";
 import {IoPlay, IoShuffle} from "react-icons/io5";
-import {GoHeart} from "react-icons/go";
+import {GoHeartFill} from "react-icons/go";
 import {TbPlayerTrackNext, TbPlayerTrackPrev, TbRepeat} from "react-icons/tb";
 import {LuMic2} from "react-icons/lu";
 export function Footer() {
@@ -10,7 +10,7 @@ export function Footer() {
             <div className="Footer__Song-Name">
                 <img src="https://i.scdn.co/image/4e55ca05d4f336a2fa0e3062a7ec9778a201e8bc" alt="song image"/>
                 <p>Shape Of You <span>Ed Sheeran</span></p>
-                <Button><GoHeart/></Button>
+                <Button className="Footer__Song-Liked"><GoHeartFill/></Button>
             </div>
 
             <div className="Footer__Song-Play">

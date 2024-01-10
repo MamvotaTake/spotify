@@ -1,0 +1,113 @@
+.Profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &__Top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  &__Content {
+    display: flex;
+    flex-direction: column;
+
+    & img {
+        border-radius: .75rem;
+    }
+
+    &-Song {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-top: .7rem;
+
+      &-Liked {
+
+        & svg {
+            width: 1.2rem;
+            height: 1.2rem;
+            fill: #1DB954;
+
+          transition: all 0.3s ease-in;
+
+          &:hover{
+            fill: #fff;
+          }
+        }
+      }
+
+      &-Dots {
+        & svg {
+          width: 1.5rem;
+          height: 1.5rem;
+          transition: all 0.3s ease-in;
+          padding: 0.2rem;
+
+          &:hover{
+            background-color: #121212;
+            border-radius: 50%;
+          }
+        }
+
+      }
+
+      & p {
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: normal;
+        color: #fff;
+        gap: .3rem;
+        & span {
+          font-size: 1rem;
+          color: rgba(255, 255, 255, 0.72);
+          font-weight: 200;
+        }
+      }
+    }
+  }
+
+  &__About {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    & img {
+      border-radius: .5rem;
+      height: 14rem;
+      width: 100%;
+      object-fit: cover;
+      filter: grayscale(100%);
+    }
+
+    & p {
+      position: absolute;
+      top: 7px;
+      left: 7px;
+      color: #121212;
+      font-weight: 600;
+      font-size: 1rem;
+      z-index: 1000;
+    }
+
+    & div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #121212;
+      opacity: .4;
+
+      z-index: 999;
+    }
+  }
+
+}

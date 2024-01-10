@@ -36,13 +36,27 @@
     }
   }
 
+  &__Song-Liked {
+
+    & svg{
+      width: 1.2rem;
+      height: 1.2rem;
+      fill: #1DB954;
+      transition: all 0.3s ease-in;
+
+      &:hover{
+        fill: #fff;
+      }
+    }
+  }
+
   &__Song-Play{
     display: flex;
     align-items: center;
     gap: 1rem;
     &-Button{
       border-radius: 50%;
-      background: linear-gradient(222deg, #FFF 12.65%, rgba(255, 255, 255, 0.00) 216.78%);
+      background: #FFFFFF;
       padding: 0.75rem;
 
 
@@ -52,7 +66,7 @@
         height: 1.5rem;
         justify-content: center;
         align-items: center;
-        color: #000;
+        fill: #000;
       }
     }
   }
