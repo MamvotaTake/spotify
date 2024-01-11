@@ -15,7 +15,13 @@
     flex: 0 0 30%;
     background-color: #212121;
     padding: 1.7rem 2rem;
-    overflow-y: scroll;
+    overflow-y: hidden;
+    transition: overflow-y 200s ease-in-out;
+
+    &:hover{
+      overflow-y: scroll;
+    }
+
   }
 
 }
