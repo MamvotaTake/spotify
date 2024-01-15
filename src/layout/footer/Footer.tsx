@@ -4,11 +4,15 @@ import {IoPlay, IoShuffle} from "react-icons/io5";
 import {GoHeart} from "react-icons/go";
 import {TbPlayerTrackNext, TbPlayerTrackPrev, TbRepeat} from "react-icons/tb";
 import {LuMic2} from "react-icons/lu";
+import {MdOutlineKeyboardArrowUp} from "react-icons/md";
 export function Footer() {
     return (
         <div className='Footer'>
             <div className="Footer__Song-Name">
-                <img src="https://i.scdn.co/image/4e55ca05d4f336a2fa0e3062a7ec9778a201e8bc" alt="song image"/>
+                <span className="Footer__Song-Name--Image">
+                    <img src="https://i.scdn.co/image/4e55ca05d4f336a2fa0e3062a7ec9778a201e8bc" alt="song image"/>
+                    <Button onClick={() => {console.log('hello world')}} className="Footer__Song-Name--Image-Button"><MdOutlineKeyboardArrowUp/></Button>
+                </span>
                 <p>Shape Of You <span>Ed Sheeran</span></p>
                 <Button><GoHeart/></Button>
             </div>
