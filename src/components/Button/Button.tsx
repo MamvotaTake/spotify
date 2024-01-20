@@ -95,6 +95,7 @@ export const Button: React.FunctionComponent<ButtonBaseProps & React.RefAttribut
                     truncate && 'Button--truncate',
                     className
                 )}
+                onClick={!disabled ? onClick : undefined}
             >
                 <span className='Button'>
                     {icon ? <span className="Button__icon">{icon}</span> : null}
