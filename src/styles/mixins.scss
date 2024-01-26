@@ -25,3 +25,11 @@
   --cyan: #6ce2e2;
 
 }
+
+@mixin play-button-position {
+  position: absolute;
+  top: 5rem;
+  right: 1rem;
+
+}
+
