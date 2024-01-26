@@ -1,12 +1,25 @@
 .Card{
   position: relative;
   padding: .6rem .5rem;
-  flex: 0 0 30%;
+
   border-radius: .5rem;
   display: flex;
-  flex-direction: column;
   cursor: pointer;
   transition: all 0.3s ease-in;
+
+  &--row{
+    width: 6rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  &--column{
+    flex-direction: column;
+    flex: 0 0 30%;
+
+  }
 
 
   &__Image{

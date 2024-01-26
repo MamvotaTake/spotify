@@ -1,0 +1,30 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5em;
+
+  &__playlist{
+    display: flex;
+  }
+}
+
+.Filter{
+  display: flex;
+  flex-wrap: wrap;
+
+  &__button{
+    margin: 0.5em;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.5em;
+    border-radius: 0.5em;
+
+    &--active{
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #121212;
+    }
+
+    &:hover{
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+}
