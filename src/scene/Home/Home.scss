@@ -5,6 +5,10 @@
 
   &__playlist{
     display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    flex: 1;
+    gap: 1.5em;
   }
 }
 
