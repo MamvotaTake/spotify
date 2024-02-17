@@ -3,7 +3,6 @@ import {Button} from "../../../components/Button";
 import {IoIosClose} from "react-icons/io";
 import { GoHeartFill} from "react-icons/go";
 import {BsThreeDots} from "react-icons/bs";
-import {Popover} from "../../../components/Popover";
 
 export function Profile() {
     return (
@@ -18,12 +17,7 @@ export function Profile() {
                     <p>Shape Of You <span>Ed Sheeran</span></p>
                     <Button  className="Profile__Content-Song-Liked"><GoHeartFill/></Button>
                     <Button className="Profile__Content-Song-Dots"><BsThreeDots/></Button>
-                    <Popover visible={true} overlay={<Button>pLAY</Button>}>
 
-                    </Popover>
-                    <Popover visible={true} overlay={<Button>ADD TO QUEUE</Button>}>
-
-                    </Popover>
                 </div>
             </div>
 
